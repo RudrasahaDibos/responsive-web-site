@@ -1,0 +1,161 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px 20px;
+    
+}
+
+body{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+.circle{
+    border: 1px solid rgb(240 188 64);
+    background-color: rgb(240 188 64);
+    width: 50px;
+    height: 50px;
+    margin-bottom: -30px;
+    border-radius: 50%;
+   
+}
+
+.logo{
+    
+    margin-top: -10px;
+   margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.reviews{
+    grid-column: span 5;
+    grid-row: span 2;
+}
+.reviews-h1-p{
+    font-size: 20px;
+}
+.reviews-ul-li{
+    list-style-image: url('Done_ring_round_fill.svg');
+    
+}
+.reviews-ul-li ul li a{
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+/* google */
+.google-img-ul img{
+    width: 140px;
+    
+    
+}
+.google-img-ul ul {
+    display: flex;
+}
+.google-ul-li{
+    margin-bottom: -300px;
+    margin-right: 200px; 
+}
+.google-img-ul ul li{
+   
+    list-style-image: url("Star_fill.svg");
+}
+.ullastli  li{
+    list-style-image: url("Star_fill_gray.svg")
+}
+.google-img-ul{
+    margin-top: 10px;
+    
+   
+  display: grid;
+ grid-template-columns: repeat(2,1fr);
+}
+.google h4{
+    margin-bottom: -10px;
+}
+
+.google{
+
+ grid-row: span 1;
+  padding: 40px;
+   grid-column-start: 8;
+   grid-column-end: 12;
+   border-radius: 5px;
+   background-color:#FAFAF9;
+    
+}
+/* meta */
+
+.meta-img-ul img{
+  
+    margin-bottom:30px;
+    width: 100px;
+}
+.meta-img-ul ul {
+    display: flex;
+}
+.meta-ul-li{
+    margin-right: 240px; 
+}
+.meta-img-ul ul li{
+    
+    list-style-image: url("Star_fill.svg");
+}
+.meta-img-ul{
+    margin-bottom: -30px;
+    margin-top: 10px;
+    
+   
+  display: grid;
+ grid-template-columns: repeat(2,1fr);
+}
+.meta h4{
+    margin-bottom: -10px;
+}
+.meta{
+    padding: 40px;
+    grid-column-start:6;
+    grid-column-end: 10;
+    border-radius: 5px;
+    background-color:#FAFAF9;
+}
+
+
+@media screen and (max-width:640px) {
+   
+    .reviews{
+        grid-column: span 1;
+    }
+    body{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .google-ul-li{
+        margin-right: 900px; 
+    }
+    .meta-ul-li{
+        margin-right: 1020px; 
+    }
+
+    .meta{
+        margin-top: 10px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        border-radius: 5px;
+        background-color: #FAFAF9;
+    }
+    .google{
+        margin-left: 70px;
+        grid-column-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
+       border-radius: 5px;
+       background-color: #FAFAF9;
+        
+    }
+  }
+
+

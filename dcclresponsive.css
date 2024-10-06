@@ -1,0 +1,55 @@
+.circle{
+    border: 1px solid rgb(240 188 64);
+    background-color: rgb(240 188 64);
+    width: 50px;
+    height: 50px;
+    margin-bottom: -30px;
+    border-radius: 50%;
+   
+}
+
+.logo{
+    
+    margin-top: -10px;
+   margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+.reviews{
+    border: 1px solid green;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    gri-row-end:6;
+}
+.google{
+    border: 1px solid green;
+    grid-column-start: 8;
+    gied-column-end:12;
+    grid-row-start: 1;
+    gri-row-end:4;
+}
+.meta{
+    border: 1px solid green;
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    gri-row-end:6;
+}
+
+.container{
+   display:grid;
+   grid-template-columns: repeat(12,1fr);
+   grid-template-rows: repeat(12,1fr);
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        grid-template-areas: 
+        "reviews"
+        "google"
+        "meta"
+        ;
+    }
+    
+}
